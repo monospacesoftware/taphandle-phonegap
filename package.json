@@ -1,0 +1,41 @@
+{
+  "name": "com.phonegap.helloworld",
+  "version": "1.0.0",
+  "description": "Your Description",
+  "scripts": {
+    "bundle": "browserify src/app.js --outfile www/js/bundle.js -v"
+  },
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-whitelist": "1"
+  },
+  "bundledDependencies": [
+    "browserify",
+    "bootstrap",
+    "popper",
+    "jquery",
+    "cssify",
+    "ftp"
+  ],
+  "browserify": {
+    "transform": [
+      "cssify"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevengill/phonegap-tempalate-browserify"
+  },
+  "displayName": "helloworld",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}
